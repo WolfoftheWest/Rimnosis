@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef>
+    <defName>ACCanisterCreate</defName>
+    <label>Seal some of the gas from your network in airtight containers so you may hornify a base from afar</label>
+    <description>Creating aphrodisiac gas container</description>
+    <jobString>Creating aphrodisiac gas container</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+		<filter>
+		  <thingDefs>
+			<li>ComponentIndustrial</li>
+		  </thingDefs>
+		</filter>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Canister_Lustgas</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <S16_WiredAnalVibrator>1</S16_WiredAnalVibrator>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+        <li>AC_GasStove</li>
+     </recipeUsers>
+  </RecipeDef>
+</Defs>

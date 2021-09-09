@@ -1,0 +1,67 @@
+	<ThingDef ParentName="BenchBase">
+		<defName>AC_GasStove</defName>
+		<label>aphrosiac gas refiner</label>
+		<description>A gas refiner for making lust canisters.</description>
+		<thingClass>GasNetwork.Building_WorkTable_Gas</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ACGasSmelter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<costList>
+			<Steel>250</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="GasNetwork.CompProperties_GasTrader">
+				<compClass>GasNetwork.CompGasTrader</compClass>
+				<gasConsumption>40</gasConsumption>
+				<gasConsumptionWhenUsed>41</gasConsumptionWhenUsed>
+			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>Things/Special/Fluid/AC_OverlayBase</commandTexture>
+				<commandLabelKey>Fluffy.GasNetwork.CommandToggleGas.Label</commandLabelKey>
+				<commandDescKey>Fluffy.GasNetwork.CommandToggleGas.Desc</commandDescKey>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>GasNetwork.CompGasHeatPusher</compClass>
+				<heatPerSecond>3</heatPerSecond>
+			</li>
+		</comps>
+		<designationHotKey>Misc8</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>AC_GasExtraction</li>
+		</researchPrerequisites>
+	</ThingDef>

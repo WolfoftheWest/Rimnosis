@@ -1,0 +1,5 @@
+D:\Program Files\Steam\steamapps\common\Rimworld\Mods\Rimnosis - NSFW\Source\Rimnosis\AphrodisiacGasGeyser\AphrodisiacGasGeyser\obj\Debug\AphrodisiacGasGeyser.csproj.CoreCompileInputs.cache
+D:\Program Files\Steam\steamapps\common\Rimworld\Mods\Rimnosis - NSFW\Source\Rimnosis\AphrodisiacGasGeyser\AphrodisiacGasGeyser\obj\Debug\AphrodisiacGasGeyser.csproj.AssemblyReference.cache
+D:\Program Files\Steam\steamapps\common\Rimworld\Mods\Rimnosis - NSFW\Assemblies\AphrodisiacGasGeyser.dll
+D:\Program Files\Steam\steamapps\common\Rimworld\Mods\Rimnosis - NSFW\Source\Rimnosis\AphrodisiacGasGeyser\AphrodisiacGasGeyser\obj\Debug\AphrodisiacGasGeyser.csproj.CopyComplete
+D:\Program Files\Steam\steamapps\common\Rimworld\Mods\Rimnosis - NSFW\Source\Rimnosis\AphrodisiacGasGeyser\AphrodisiacGasGeyser\obj\Debug\AphrodisiacGasGeyser.dll

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef Class="GasTrap.GasTrapDef" ParentName="BuildingBase">
+		<defName>GasTrap</defName>
+		<label>gas trap (lust)</label>
+		<thingClass>GasTrap.Building_GasTrap</thingClass>
+		<graphicData>
+		  <texPath>Things/Building/GasTrapLust</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <damageData>
+			<rect>(0.1,0,0.8,0.3)</rect>
+		  </damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawerType>RealtimeOnly</drawerType>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<GasDef>Gas_Aphrodisiac</GasDef>
+		<damDef>Smoke</damDef>
+		<triggerChance>1</triggerChance>
+        <range>4.9</range>
+		
+		<triggerByNormal>true</triggerByNormal>
+        <triggerByInsects>true</triggerByInsects>
+		<triggerByMechanoids>false</triggerByMechanoids>
+		<statBases>
+		  <MaxHitPoints>40</MaxHitPoints>
+		  <WorkToBuild>2000</WorkToBuild>
+		  <Beauty>-4</Beauty>
+	<!--	  <TrapSpringChance>0.8</TrapSpringChance> -->
+		</statBases>
+		<description>This trap releases lust gas when a cute, little pawn walks too close. Aw, look at that cute thing cumming!</description>
+		<costList>
+			<Shell_GasLust>1</Shell_GasLust>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>10</Steel>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<researchPrerequisites><li>IEDs</li></researchPrerequisites>
+		<building>
+		  <isTrap>true</isTrap>
+		</building>
+  </ThingDef>
+</Defs>

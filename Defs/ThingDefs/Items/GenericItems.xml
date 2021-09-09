@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Lets put things into catagories so they are easier to manage -->
+	<ThingCategoryDef>
+		<defName>WeaponizedGas</defName>
+		<label>weaponized gases</label>
+		<parent>Drugs</parent>
+		<iconPath>Things/Items/Toxiccan</iconPath><!-- todo make an icon for this -->
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>GasShells</defName>
+		<label>gas shells</label>
+		<parent>MortarShells</parent>
+		<iconPath>UI/Icons/ThingCategories/MortarShells</iconPath><!-- todo make an icon for this -->
+	</ThingCategoryDef>
+
+
+	<!--Gas canisters -->
+	<ThingDef Name="GasTrap_CanisterBase" ParentName="ResourceBase" Abstract="True">
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>75</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.05</Mass>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>WeaponizedGas</li>
+		</thingCategories><!-- TODO add a trade catagory-->
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>AC_GasStove</li>
+			</recipeUsers>
+			<researchPrerequisite>WeaponizedGas</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+				<Intellectual>5</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+
+	</ThingDef>
+
+	<ThingDef ParentName="GasTrap_CanisterBase">
+		<defName>Canister_LustGas</defName>
+		<label>lust gas canister</label>
+		<description>A canister of a sweet smelling substance ready to improve your day</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Weapon/Lustcan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>Smoke</explosiveDamageType>
+				<explosiveExpandPerStackcount>.2</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<postExplosionSpawnThingDef>Gas_Aphrodisiac</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>.66</postExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+		<costList>
+			<Chemfuel>3</Chemfuel>
+			<PsychoidLeaves>8</PsychoidLeaves>
+		</costList>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>ACGasPipe</defName>
+		<label>ac gas pipe</label>
+		<description>A pipe that transmits Aphrodisiac gas.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/ACGasPipe_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/ACGasPipe_MenuIcon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/Building/GasPipe_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>SmallWire</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>0.7</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<comps>
+			<li Class="GasNetwork.CompProperties_Gas">
+				<compClass>GasNetwork.CompGas</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>GasNetwork.PlaceWorker_Pipe</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>ACGasExtraction</li>
+		</researchPrerequisites>
+		<clearBuildingArea>false</clearBuildingArea>
+		<designationHotKey>Misc1</designationHotKey>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>ACGasPipeSub</defName>
+		<label>subterranean ac gas pipe</label>
+		<description>A pipe that transmits aphrodisiac gas. This pipe is hidden from view and is protected from gas explosions. Much more expensive to build than regular pipes</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/AC_BlankTransmitterAtlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/ACGasPipe_MenuIcon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/Building/ACGasPipe_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>120</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<comps>
+			<li Class="GasNetwork.CompProperties_Gas">
+				<compClass>GasNetwork.CompGas</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>GasNetwork.PlaceWorker_Pipe</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>VFE_GasExtraction</li>
+		</researchPrerequisites>
+		<clearBuildingArea>false</clearBuildingArea>
+		<designationHotKey>Misc1</designationHotKey>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AC_GasPipeValve</defName>
+		<label>gas valve</label>
+		<description>Switches gas flow on/off.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/ACGasSwitch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<allowWireConnection>false</allowWireConnection>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<placingDraggableDimensions>0</placingDraggableDimensions>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="GasNetwork.CompProperties_Gas">
+				<compClass>GasNetwork.CompGasValve</compClass>
+			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>Things/Building/AC_OverlayBase</commandTexture>
+				<commandLabelKey>Fluffy.GasNetwork.CommandToggleGas.Label</commandLabelKey>
+				<commandDescKey>Fluffy.GasNetwork.CommandToggleGas.Desc</commandDescKey>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc2</designationHotKey>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers/>
+		<researchPrerequisites>
+			<li>VFE_GasExtraction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AC_GasTank</defName>
+		<label>aphrodisiac gas tank</label>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<description>A large steel tank for aphrodisiac gas storage. Will explode if damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/ACGasTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+		<comps>
+			<li Class="GasNetwork.CompProperties_GasStorage">
+				<compClass>GasNetwork.CompGasStorage</compClass>
+				<capacity>1000</capacity>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0</explosiveRadius>
+				<explosiveExpandPerFuel>0.95</explosiveExpandPerFuel>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+			
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>VFE_GasExtraction</li>
+		</researchPrerequisites>
+		<designationHotKey>Misc4</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers/>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AC_AphrodisiacPump</defName>
+		<label>aphrodisiac pump</label>
+		<description>An extractor machine mounted on an aphrodisiac gas geyser. Self-powered, this machine pumps out valuable gas and needs to be connected to other gas-based utilities using the pipe network.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/AphrodisiacPump</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>1.0</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(4,4)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<placeWorkers>
+			<li>VanillaPowerExpanded.PlaceWorker_PipeUserOnACGasGeyser</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="GasNetwork.CompProperties_GasTrader">
+				<compClass>GasNetwork.CompGasTrader</compClass>
+				<gasConsumption>-300</gasConsumption>
+			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>Things/Special/Fluid/AC_OverlayBase</commandTexture>
+				<commandLabelKey>Fluffy.GasNetwork.CommandToggleGas.Label</commandLabelKey>
+				<commandDescKey>Fluffy.GasNetwork.CommandToggleGas.Desc</commandDescKey>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(90,140,90,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>GasNetwork.CompGasHeatPusher</compClass>
+				<heatPerSecond>6</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>ACGasExtraction</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AC_GasVent</defName>
+		<label>aphrodisiac gas vent</label>
+		<description>A wall-mounted vent capable of releasing high amounts of aphrodisiac gas into the targeted area. It drains aphrodisiac gas supply rapidly, and dissipates quickly. It needs a gas valve installed in the same network to limit the flow of gas. Aphrodisiac gas is very volatile and will travel with wind.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ACGasVent</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<blockLight>true</blockLight>
+		<castEdgeShadows>true</castEdgeShadows>
+		<canOverlapZones>false</canOverlapZones>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>GasNetwork.PlaceWorker_GasVent</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<researchPrerequisites>
+			<li>ACGasExtraction</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+		<comps>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>UI/Commands/Vent</commandTexture>
+				<commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+				<commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+			</li>
+			<li Class="GasNetwork.CompProperties_GasVent">
+				<compClass>GasNetwork.CompGasVent</compClass>
+				<!-- This is also the amount of gas that is vented. See the maxDensity setting in the gas def for balancing options.
+				I would recommend a very high consumption and maxDensity, as this is going to be quite overpowered. -->
+				<gasConsumptionWhenUsed>100</gasConsumptionWhenUsed>
+				<!-- Ventingradius only directly affects the placeWorker graphic, actual gas buildup is determined by the amount of 
+				gas released, dissipation rates (both settable in the gas def), and wind speed and direction. -->
+				<ventingRadius>5.4</ventingRadius>
+				<!-- def for the gas released. -->
+				<ventingGas>Gas_Aphrodisiac</ventingGas>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

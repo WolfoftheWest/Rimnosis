@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>ACGasExtraction</defName>
+    <label>aphrodisiac extraction</label>
+	<tab>Rimnosis</tab>
+    <description>Research the aphrodisiac gas and it's ability to cause immense lust.</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Industrial</techLevel>
+  <researchViewX>3.00</researchViewX>
+  <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>Electricity</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>
+

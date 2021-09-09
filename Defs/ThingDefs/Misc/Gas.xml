@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BaseGas">
+        <thingClass>GasNetwork.Gas_Spreading</thingClass>
+        <defName>Gas_Aphrodisiac</defName>
+        <label>Aphrodisiac gas</label>
+        <description>causes high amounts of lust.</description>
+        <graphicData>
+            <graphicClass>GasNetwork.Graphic_GasSpreading</graphicClass>
+            <texPath>Things/Gas/Puff</texPath>
+            <drawSize>2.3</drawSize>
+            <color>(0.69,0.25,0.22,0.8)</color>
+        </graphicData>
+        <gas>
+            <blockTurretTracking>true</blockTurretTracking>
+            <accuracyPenalty>0.3</accuracyPenalty>
+            <rotationSpeed>15</rotationSpeed>
+        </gas>
+        <modExtensions>
+            <li Class="GasNetwork.DefModExtension_SpreadingGas">
+                <!-- Can this gas (violently) explode? -->
+                <flammable>false</flammable>
+
+                <!-- hediff to apply on exposure to this gas -->
+                <exposureHediff>HumpShroomEffect</exposureHediff>
+
+                <!-- severity of hediff, at exposure to maximum density gas -->
+                <severityPerHourExposed>.2</severityPerHourExposed>
+
+                <!-- amount of gas in a cell to reach maximum density -->
+                <maxDensity>100</maxDensity>
+
+                <!-- amount of gas that is dissipated every half second -->
+                <!-- TODO: refactor into dissipationTime? -->
+                <staticDissipation>1</staticDissipation>
+
+                <!-- amount of gas that can be dissipated by wind (moved, does not disappear) -->
+                <windDissipation>1</windDissipation>
+            </li>
+        </modExtensions>
+    </ThingDef>
+  <!--=============== Puffs ==============-->
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>AC_Mote_GasPuff</defName>
+    <graphicData>
+      <texPath>Things/Mote/AirPuff</texPath>
+	  <color>(176,64,56)</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.04</fadeInTime>
+      <solidTime>0.03</solidTime>
+      <fadeOutTime>1</fadeOutTime>
+    </mote>
+  </ThingDef>
+  	<HediffDef>
+		<defName>AphrodisiacEffect</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Induced heat</label>
+		<description>aphrodisiac gas effects.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>1.33</restFallFactor>
+				<statOffsets>
+					<SexFrequency>20</SexFrequency>
+					<SexSatisfaction>1</SexSatisfaction>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>AphrodisiacEffect</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AphrodisiacEffect</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Aphrodisiac inhalation</label>
+				<description>Smells weird.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>
