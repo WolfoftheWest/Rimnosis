@@ -23,6 +23,7 @@
 			<li>ComponentIndustrial</li>
 		  </thingDefs>
 		</filter>
+		<count>3</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -36,6 +37,7 @@
     <workSkill>Crafting</workSkill>
 	<recipeUsers>
         <li>AC_GasStove</li>
+		<li>CraftingSpot</li>
      </recipeUsers>
   </RecipeDef>
 </Defs>

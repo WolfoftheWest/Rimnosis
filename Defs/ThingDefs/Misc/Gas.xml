@@ -22,7 +22,7 @@
                 <flammable>false</flammable>
 
                 <!-- hediff to apply on exposure to this gas -->
-                <exposureHediff>HumpShroomEffect</exposureHediff>
+                <exposureHediff>AphrodisiacEffect</exposureHediff>
 
                 <!-- severity of hediff, at exposure to maximum density gas -->
                 <severityPerHourExposed>.2</severityPerHourExposed>
@@ -71,7 +71,7 @@
 			<li>
 				<restFallFactor>1.33</restFallFactor>
 				<statOffsets>
-					<SexFrequency>20</SexFrequency>
+					<SexFrequency>200</SexFrequency>
 					<SexSatisfaction>1</SexSatisfaction>
 				</statOffsets>
 			</li>
