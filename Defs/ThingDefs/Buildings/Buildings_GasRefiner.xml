@@ -1,4 +1,6 @@
-	<ThingDef ParentName="BenchBase">
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="BenchBase">
 		<defName>AC_GasStove</defName>
 		<label>aphrosiac gas refiner</label>
 		<description>A gas refiner for making lust canisters.</description>
@@ -65,3 +67,4 @@
 			<li>AC_GasExtraction</li>
 		</researchPrerequisites>
 	</ThingDef>
+</Defs>

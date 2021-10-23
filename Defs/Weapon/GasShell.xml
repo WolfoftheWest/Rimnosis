@@ -87,7 +87,7 @@
 			<speed>41</speed>
 			<explosionRadius>5.9</explosionRadius>
 			<flyOverhead>true</flyOverhead>
-			<postExplosionSpawnThingDef>Gas_Aphroisiac</postExplosionSpawnThingDef>
+			<postExplosionSpawnThingDef>Gas_Aphrodisiac</postExplosionSpawnThingDef>
 			<postExplosionSpawnChance>100.0</postExplosionSpawnChance>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 			<soundExplode>Explosion_Stun</soundExplode>

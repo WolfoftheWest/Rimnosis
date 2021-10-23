@@ -13,6 +13,15 @@
 			<displayName>RimJobWorld</displayName>
 			<downloadUrl>https://gitgud.io/Ed86/rjw</downloadUrl>
 		</li>
+		<li>
+			<packageId>VanillaExpanded.VFEPower</packageId>
+			<displayName>Vanilla Furniture Expanded Power</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2062943477</downloadUrl>
+		</li>
+		<li>
+			<packageId>com.distman.gastrap></packageId>
+			<displayName>Gas Traps and Shells</packageId>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2012627964</downloadUrl>
 	</modDependencies>
 	<loadAfter>
 		<li>rim.job.world</li>

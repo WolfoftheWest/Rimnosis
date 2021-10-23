@@ -37,7 +37,6 @@
     <workSkill>Crafting</workSkill>
 	<recipeUsers>
         <li>AC_GasStove</li>
-		<li>CraftingSpot</li>
      </recipeUsers>
   </RecipeDef>
 </Defs>
