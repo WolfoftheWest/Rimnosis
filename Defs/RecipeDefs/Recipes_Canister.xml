@@ -2,8 +2,8 @@
 <Defs>
   <RecipeDef>
     <defName>ACCanisterCreate</defName>
-    <label>Seal some of the gas from your network in airtight containers so you may hornify a base from afar</label>
-    <description>Creating aphrodisiac gas container</description>
+    <label>Create Lust gas canister </label>
+    <description>Seal some of the gas from your network in airtight containers so you may hornify a base from afar</description>
     <jobString>Creating aphrodisiac gas container</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -18,6 +18,8 @@
           </thingDefs>
         </filter>
         <count>15</count>
+	  </li>
+	  <li>
 		<filter>
 		  <thingDefs>
 			<li>ComponentIndustrial</li>
@@ -26,13 +28,8 @@
 		<count>3</count>
       </li>
     </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Canister_Lustgas</li>
-      </thingDefs>
-    </fixedIngredientFilter>
     <products>
-      <S16_WiredAnalVibrator>1</S16_WiredAnalVibrator>
+      <Canister_LustGas>1</Canister_LustGas>
     </products>
     <workSkill>Crafting</workSkill>
 	<recipeUsers>
