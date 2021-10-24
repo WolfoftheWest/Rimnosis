@@ -119,7 +119,7 @@
 		<designationCategory>Power</designationCategory>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>VFE_GasExtraction</li>
+			<li>ACGasExtraction</li>
 		</researchPrerequisites>
 		<clearBuildingArea>false</clearBuildingArea>
 		<designationHotKey>Misc1</designationHotKey>
@@ -175,7 +175,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers/>
 		<researchPrerequisites>
-			<li>VFE_GasExtraction</li>
+			<li>ACGasExtraction</li>
 		</researchPrerequisites>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
@@ -237,7 +237,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>VFE_GasExtraction</li>
+			<li>ACGasExtraction</li>
 		</researchPrerequisites>
 		<designationHotKey>Misc4</designationHotKey>
 		<canOverlapZones>false</canOverlapZones>

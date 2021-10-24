@@ -38,7 +38,7 @@
 			<Steel>10</Steel>
 		</costList>
 		<designationCategory>Security</designationCategory>
-		<researchPrerequisites><li>IEDs</li></researchPrerequisites>
+		<researchPrerequisites><li>ACGasExtraction</li></researchPrerequisites>
 		<building>
 		  <isTrap>true</isTrap>
 		</building>

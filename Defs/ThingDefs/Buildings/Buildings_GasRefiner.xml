@@ -64,7 +64,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>AC_GasExtraction</li>
+			<li>ACGasExtraction</li>
 		</researchPrerequisites>
 	</ThingDef>
 </Defs>
