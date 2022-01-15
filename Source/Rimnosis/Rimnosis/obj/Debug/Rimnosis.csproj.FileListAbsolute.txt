@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimnosis - NSFW\Assemblies\WhiteNoiseGrenade.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimnosis - NSFW\Source\Rimnosis\Rimnosis\obj\Debug\Rimnosis.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimnosis - NSFW\Source\Rimnosis\Rimnosis\obj\Debug\Rimnosis.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimnosis - NSFW\Source\Rimnosis\Rimnosis\obj\Debug\WhiteNoiseGrenade.dll
