@@ -1,12 +1,10 @@
-﻿using RimWorld;
-using Verse;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RimWorld;
+using Verse;
 
-namespace WhiteNoiseGrenade
+namespace Rimnosis
 {
         public class ThingDef_WNProjectile : ThingDef
         {

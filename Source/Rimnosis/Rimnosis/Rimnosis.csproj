@@ -7,8 +7,8 @@
     <ProjectGuid>{060377C0-089B-42F0-B58F-44B605637A0C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WhiteNoiseGrenade</RootNamespace>
-    <AssemblyName>WhiteNoiseGrenade</AssemblyName>
+    <RootNamespace>Rimnosis</RootNamespace>
+    <AssemblyName>Rimnosis</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
