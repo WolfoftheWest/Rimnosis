@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rimnosis", "Rimnosis\Rimnosis.csproj", "{060377C0-089B-42F0-B58F-44B605637A0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AphrodisiacGasGeyser", "AphrodisiacGasGeyser\AphrodisiacGasGeyser\AphrodisiacGasGeyser.csproj", "{6FD1AC8F-67B9-46D4-9AF9-BB98A91854F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AphrodisiacGasGeyser", "AphrodisiacGasGeyser\AphrodisiacGasGeyser.csproj", "{6FD1AC8F-67B9-46D4-9AF9-BB98A91854F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
