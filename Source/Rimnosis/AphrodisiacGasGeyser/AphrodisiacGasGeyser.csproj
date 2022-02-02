@@ -7,8 +7,8 @@
     <ProjectGuid>{6FD1AC8F-67B9-46D4-9AF9-BB98A91854F4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AphrodisiacGasGeyser</RootNamespace>
-    <AssemblyName>AphrodisiacGasGeyser</AssemblyName>
+    <RootNamespace>Rimnosis.AphrodisiacGas</RootNamespace>
+    <AssemblyName>AphrodisiacGas</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

@@ -6,7 +6,7 @@
     <defName>AphrodisiacGeyser</defName>
     <label>aphrodisiac gas geyser</label>
     <description>A natural source of high-pressure gas. Aphrodisiac gas pumps can be built on top to extract the gas.</description>
-    <thingClass>VanillaPowerExpanded.Building_GasGeyser</thingClass>
+    <thingClass>Rimnosis.Gas.Building_SpawningGasGeyser</thingClass>
     <graphicData>
       <texPath>Things/Building/GasGeyser</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -28,5 +28,12 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
+    <modExtensions>
+      <li Class="Rimnosis.Gas.DefModExtension_GasGeyserParams">
+        <gasDef>Gas_Aphrodisiac</gasDef>
+        <moteDef>AC_Mote_GasPuff</moteDef>
+        <amount>400</amount>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>
