@@ -30,8 +30,7 @@
                 <!-- amount of gas in a cell to reach maximum density -->
                 <maxDensity>100</maxDensity>
 
-                <!-- amount of gas that is dissipated every half second -->
-                <!-- TODO: refactor into dissipationTime? -->
+                <!-- amount of gas that is dissipated every second -->
                 <staticDissipation>1</staticDissipation>
 
                 <!-- amount of gas that can be dissipated by wind (moved, does not disappear) -->
@@ -39,6 +38,7 @@
             </li>
         </modExtensions>
     </ThingDef>
+  
   <!--=============== Puffs ==============-->
   
   <ThingDef ParentName="MoteBase">
@@ -54,7 +54,8 @@
       <fadeOutTime>1</fadeOutTime>
     </mote>
   </ThingDef>
-  	<HediffDef>
+
+  <HediffDef>
 		<defName>AphrodisiacEffect</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Induced heat</label>
