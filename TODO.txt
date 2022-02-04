@@ -1,9 +1,9 @@
 Aphrodisiac Gas Code - Done
-Aphrodisiac Mortar
-Aphrodisiac SRTSE Bomb
-Hypno Statues
-Hypno Helmet
-Reconditioning Chair
-Crystal Hypnosis
-Watch Hypnosis
-Ideology Hypnosis Ritual?
+Aphrodisiac Mortar - Done
+Aphrodisiac SRTSE Bomb - Done
+Hypno Statues - Done
+Hypno Helmet - created not coded
+Reconditioning Chair - created not coded
+Crystal Hypnosis - created not coded
+Watch Hypnosis - created not coded
+Ideology Hypnosis Ritual? - exploratory ritual created, need hypnosis frame to be done to implement

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PsychicStatue.SoothingStatuesDef>
+		<defName>default</defName>
+		<Statues>
+			<li>KarliahFuta</li>
+			<li>KarliahNonFuta</li>
+			<li>Snake</li>
+			<li>Archohelm</li>
+		</Statues>
+	</PsychicStatue.SoothingStatuesDef>
+</Defs>

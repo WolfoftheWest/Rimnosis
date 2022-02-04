@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+	<!-- Gas pipe system -->
+	<AC_PipesNotConnected>管道未被正确连接至开采装置或储罐。</AC_PipesNotConnected>
+	<AC_PipeConnectedRateStored>管道网络过剩/储量：{0} ml / {1} ml-d</AC_PipeConnectedRateStored>
+	<AC_LiquidTankStored>储存气体量</AC_LiquidTankStored>
+	<AC_LiquidTankEfficiency>储罐效率</AC_LiquidTankEfficiency>
+	<AC_TankLeakage>最小密封泄漏</AC_TankLeakage>
+	<AC_NutrientNeeded>气体需求量</AC_NutrientNeeded>
+	<AC_LiquidOutput>气体输出</AC_LiquidOutput>
+	<AC_MustPlaceOnGasGeyser>这座建筑必须放置在催情气体间歇泉的顶部</AC_MustPlaceOnGasGeyser>
+	<AC_PlugHole>填埋</AC_PlugHole>
+	<AC_PlugHoleDesc>用泥土填满它。 警告：这会破坏它。 仅当它不再可用或需要空间时才执行此操作。</AC_PlugHoleDesc>
+	<AC_CancelPlugHole>取消填埋</AC_CancelPlugHole>
+	<AC_CancelPlugHoleDesc>取消填埋指令。</AC_CancelPlugHoleDesc>
+	<AC_MustPlaceAdjacentToPipe>燃气动力建筑必须与燃气管道相邻，而不是在其顶部。</AC_MustPlaceAdjacentToPipe>
+	<AC_DeconstructGasPipes>拆除气体管道</AC_DeconstructGasPipes>
+	<AC_DeconstructGasPipesDesc>仅会拆除气体管道和地下气体管道。</AC_DeconstructGasPipesDesc>
+
+	<Fluffy.GasNetwork.GasNetworkInspectString>网络中过剩（储存的）气体： {0} ({1})</Fluffy.GasNetwork.GasNetworkInspectString>
+	<Fluffy.GasNetwork.Stored>储存的气体： {0}/{1}</Fluffy.GasNetwork.Stored>
+	<Fluffy.GasNetwork.Production>气体产出： {0}</Fluffy.GasNetwork.Production>
+	<Fluffy.GasNetwork.Consumption>气体消耗： {0}</Fluffy.GasNetwork.Consumption>
+	<Fluffy.GasNetwork.GasOff>气体关闭。</Fluffy.GasNetwork.GasOff>
+	<Fluffy.GasNetwork.NoNetwork>未连接至气体网络。</Fluffy.GasNetwork.NoNetwork>
+	<Fluffy.GasNetwork.ValveOpen>阀门打开。</Fluffy.GasNetwork.ValveOpen>
+	<Fluffy.GasNetwork.ValveClosed>阀门关闭。</Fluffy.GasNetwork.ValveClosed>
+	<Fluffy.GasNetwork.CommandToggleGas.Label>切换气流开关</Fluffy.GasNetwork.CommandToggleGas.Label>
+	<Fluffy.GasNetwork.CommandToggleGas.Desc>打开或关闭气流的指令。 一个殖民者很快就会来轻按开关。</Fluffy.GasNetwork.CommandToggleGas.Desc>
+	<Fluffy.GasNetwork.DesiredBuffer>目标储气量：{0}/{1}</Fluffy.GasNetwork.DesiredBuffer>
+	<Fluffy.GasNetwork.BufferOff>关闭气体储存。</Fluffy.GasNetwork.BufferOff>
+
+	<Fluffy.GasNetwork.Settings.Wind.WindSpeedUnit>风速首选单位</Fluffy.GasNetwork.Settings.Wind.WindSpeedUnit>
+	<Fluffy.GasNetwork.Settings.Wind.Category>风模拟</Fluffy.GasNetwork.Settings.Wind.Category>
+	<!-- Misc -->
+	<AC_MustPlaceRoofed>这个建筑必须被放在室内，屋顶之下。</AC_MustPlaceRoofed>
+
+	<!-- Violence Generator -->
+	<AC_LustTime>下次灵魂储备：</AC_SoulsTime>
+	<AC_Producing>产出 {0} W 电力</AC_Producing>
+	<AC_NotProducing>吸收不到灵魂，机械众神们饥渴地等待人类的灵魂。</AC_NotProducing>
+	<AC_ToggleLustGenerator>切换发电机开关</AC_ToggleViolenceGenerator>
+	<AC_ToggleLustGeneratorDesc>在工作和非活动状态之间切换发电机</AC_ToggleViolenceGeneratorDesc>
+	<AC_GeneratorIsOff>暴力生成器现在已关闭且处于非活动状态</AC_GeneratorIsOff>
+	<!-- Gas pipe kaboom -->
+
+	<AC_AGasPipe>气体管道</AC_AGasPipe>
+	<AC_GasExplosion>{0}中的一个故障导致了一次气体爆炸。</AC_GasExplosion>
+	<AC_GasExplosionStartedFire>{0}中的一个故障导致了一次气体爆炸，并引发了火灾。</AC_GasExplosionStartedFire>
+	<AC_GasExplosionLostGas>由于猛烈爆炸，连接的气罐中的 {0} l-d 气体都散逸了。</AC_GasExplosionLostGas>
+	<AC_GasExplosionLWasLarge>大量的气体造成了剧烈的爆炸。</AC_GasExplosionLWasLarge>
+	<AC_GasExplosionLWasHuge>大爆炸！哇哦！</AC_GasExplosionLWasHuge>
+	<AC_LetterLabelGasExplosion>气体爆炸！</AC_LetterLabelGasExplosion>
+</LanguageData>

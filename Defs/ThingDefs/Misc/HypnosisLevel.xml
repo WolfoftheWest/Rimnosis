@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<HediffDef>
+<HediffDef>
 		<defName>HypnosisLevel</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Hypnosis Level</label>

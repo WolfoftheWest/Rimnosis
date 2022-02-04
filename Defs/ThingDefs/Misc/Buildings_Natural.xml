@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>AphrodisiacGeyser</defName>
+    <label>aphrodisiac gas geyser</label>
+    <description>A natural source of high-pressure gas. Aphrodisiac gas pumps can be built on top to extract the gas.</description>
+    <thingClass>VanillaPowerExpanded.Building_GasGeyser</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasGeyser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <uiIconScale>0.5</uiIconScale>
+    <altitudeLayer>Floor</altitudeLayer>
+    <rotatable>false</rotatable>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+    <size>(4,4)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+    <building>
+      <isEdifice>false</isEdifice>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+  </ThingDef>
+</Defs>

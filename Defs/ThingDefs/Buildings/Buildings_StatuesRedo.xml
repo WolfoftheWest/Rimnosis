@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!--- The base -->
+  
+  <ThingDef ParentName="BuildingBase" Name="RimnosisStatueBase" Abstract="True">
+    <thingClass>Building_Art</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>1.10</SellPriceFactor>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Artistic</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Quality">
+            <curve>
+              <points>
+                <li>(0,0.12)</li> <!-- awful -->
+                <li>(1,0.16)</li> <!-- poor -->
+                <li>(2,0.20)</li> <!-- normal -->
+                <li>(3,0.22)</li> <!-- good -->
+                <li>(4,0.24)</li> <!-- excellent -->
+                <li>(5,0.26)</li> <!-- masterwork -->
+                <li>(6,0.28)</li> <!-- legendary -->
+              </points>
+            </curve>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+            <defs>
+              <li>KarliahFuta</li>
+			  <li>KarliahNonFuta</li>
+			  <li>Snake</li>
+			  <li>Archohelm</li>
+            </defs>
+            <radius>9.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <focusPerQuality>
+              <points>
+                <li>(0,0.0)</li> <!-- awful -->
+                <li>(1,0.0)</li> <!-- poor -->
+                <li>(2,0.01)</li> <!-- normal -->
+                <li>(3,0.01)</li> <!-- good -->
+                <li>(4,0.01)</li> <!-- excellent -->
+                <li>(5,0.02)</li> <!-- masterwork -->
+                <li>(6,0.02)</li> <!-- legendary -->
+              </points>
+            </focusPerQuality>
+            <explanationKey>MeditationFocusPerSculpture</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+	  <li Class="CompProperties_MoteEmitter">
+        <mote>Mote_PsychicEmanatorEffect</mote>
+        <emissionInterval>350</emissionInterval>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableSculpting</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
+    <ritualFocus>
+      <spectateDistance>2</spectateDistance>
+      <allowedSpectateSides>Down</allowedSpectateSides>
+    </ritualFocus>
+  </ThingDef>  
+  
+
+	<!-- Karliah Statue Futa -->
+
+  <ThingDef ParentName="RimnosisStatueBase">
+    <defName>KarliahFuta</defName>
+    <label>Statue of Karliah Firebrand (Futa)</label>
+	<description>Statue of Karliah Firebrand, the goddess of lust, beauty, and subjugation. The artist has sculpted this statue to display Karliah as a futa.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Building/Linked/Statues/Futa/KarliahFuta</texPath>
+      <drawSize>(5,5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <rotatable>false</rotatable>
+	<size>(5,5)</size>
+    <statBases>
+      <MaxHitPoints>1505</MaxHitPoints>
+      <Mass>5.1</Mass>
+      <Beauty>501</Beauty>
+      <WorkToMake>22005</WorkToMake> <!-- 22000 -->
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <minifiedDef>MinifiedThing</minifiedDef>	  
+  </ThingDef>
+  
+	<!-- Karliah Statue Non-Futa -->
+  <ThingDef ParentName="RimnosisStatueBase">
+    <defName>KarliahNonFuta</defName>
+    <label>Statue of Karliah Firebrand (Non-Futa)</label>
+	<description>Statue of Karliah Firebrand, the goddess of lust, beauty, and subjugation. The artist has sculpted this statue to display Karliah as a normal woman.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Linked/Statues/Non-Futa/KarliahNonFuta</texPath>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <rotatable>false</rotatable>
+	<size>(5,5)</size>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Mass>5</Mass>
+      <Beauty>500</Beauty>
+      <WorkToMake>22000</WorkToMake> <!-- 22000 -->
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <minifiedDef>MinifiedThing</minifiedDef>	  
+  </ThingDef>
+
+	<!-- Archotech Helmet Statue -->
+
+  <ThingDef ParentName="RimnosisStatueBase">
+    <defName>Archohelm</defName>
+    <label>Statue of an archotech mind control helmet</label>
+	<description>Statue of a theoretical mind control device produced by an archotech mind, used to enslave a populace even after death.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Building/Linked/Statues/Archohelm/small_statue_archaic_helmet</texPath>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <rotatable>false</rotatable>
+	<size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>1505</MaxHitPoints>
+      <Mass>3.0</Mass>
+      <Beauty>200</Beauty>
+      <WorkToMake>2005</WorkToMake> <!-- 22000 -->
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <minifiedDef>MinifiedThing</minifiedDef>	  
+  </ThingDef>
+  
+  	<!-- Snake Statue -->
+
+  <ThingDef ParentName="RimnosisStatueBase">
+    <defName>Snake</defName>
+    <label>Statue of a coiled snake</label>
+	<description>Statue of a coiled maroon colored snake, with eyes made to entrance the viewer.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Building/Linked/Statues/Futa/KarliahFuta</texPath>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <rotatable>false</rotatable>
+	<size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>1505</MaxHitPoints>
+      <Mass>3.0</Mass>
+      <Beauty>250</Beauty>
+      <WorkToMake>2005</WorkToMake> <!-- 22000 -->
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <minifiedDef>MinifiedThing</minifiedDef>	  
+  </ThingDef>
+  
+</Defs>
