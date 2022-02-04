@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="BaseGas">
-        <thingClass>GasNetwork.Gas_Spreading</thingClass>
+        <thingClass>Rimnosis.Gas.Gas_Spreading_Fixed</thingClass>
         <defName>Gas_Aphrodisiac</defName>
         <label>Aphrodisiac gas</label>
         <description>causes high amounts of lust.</description>
